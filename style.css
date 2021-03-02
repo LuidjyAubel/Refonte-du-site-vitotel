@@ -1,0 +1,111 @@
+/* Place the navbar at the Top of the page, and make it stick */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+/* Style of the menu block */
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of different menu block */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*Curent page in color on menu bar */
+.navbar a.active {
+  background-color: darkblue;
+  color: white;
+}
+
+/* for the picture slide */
+.d1 {
+  width: 576px;
+  height: 432px;
+  margin: auto 50px;
+  box-shadow: 0px 15px 10px -5px #777;
+  background-color: #ededed;
+  background-size: contain;
+  animation: fondu 15s ease-in-out infinite both;
+}
+.diapo {
+  max-width: 576px;
+  margin: auto 50px;
+}
+@keyframes fondu {
+  0% {
+    background-image: url(https://zupimages.net/up/21/07/az9r.jpg);
+  }
+  33.33% {
+    background-image: url(https://zupimages.net/up/21/07/jrtv.jpg);
+  }
+  66.67% {
+    background-image: url(https://zupimages.net/up/21/07/ed0c.jpg);
+  }
+  100% {
+    background-image: url(https://zupimages.net/up/21/07/az9r.jpg);
+  }
+}
+.d1:hover {
+  animation-play-state: paused;
+}
+
+/*For change the H2 title */
+h2 {
+  color: darkblue;
+  font-weight: 20px;
+}
+
+/*For change the main part of the site */
+.main {
+  background-color: #e7e4e4;
+  padding: 20px;
+}
+
+/* Style of the footer block */
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: -50;
+  width: 100%;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  text-align: left;
+}
+
+/* for that the title has been sticky on the navbar*/
+#title {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 17px;
+  position: sticky;
+  bottom: 10;
+}
+
+/* for creating a spacing over the navbar*/
+.spacing {
+  height: 50px;
+}
+/* for the title of "page" (in first page it's Actualité)*/
+.littletitle {
+  font-size: 45px;
+}
+/* for increase the height*/
+h5 {
+  font-size: 20px;
+  text-decoration: underline;
+}
