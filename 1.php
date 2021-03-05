@@ -50,7 +50,26 @@
 function goBack() {
   window.history.back();
 }
-</script>';  
+</script>';
+            // Ecrire dans un fichier
+
+            $fichier = 'Données.txt';
+	   file_put_contents($fichier, "Nom : ",FILE_APPEND) ;
+	   file_put_contents($fichier, $nom,FILE_APPEND) ;
+	   file_put_contents($fichier, "\n",FILE_APPEND) ;
+	   file_put_contents($fichier, "Prenom : ",FILE_APPEND) ;
+	   file_put_contents($fichier, $prenom,FILE_APPEND) ;
+	   file_put_contents($fichier, "\n",FILE_APPEND) ;
+	   file_put_contents($fichier, "Téléphone : ",FILE_APPEND) ;
+	   file_put_contents($fichier, $tel,FILE_APPEND) ;
+	   file_put_contents($fichier, "\n",FILE_APPEND) ;
+	   file_put_contents($fichier, "Adresse mail : ",FILE_APPEND) ;
+           file_put_contents($fichier, $mail,FILE_APPEND) ;
+	   file_put_contents($fichier, "\n",FILE_APPEND) ;
+	   file_put_contents($fichier, "Message : ",FILE_APPEND) ;
+	   file_put_contents($fichier, $message,FILE_APPEND) ;
+	   file_put_contents($fichier, "\n",FILE_APPEND) ;
+
 ?>
 <br><br><hr>
 </div>
@@ -62,7 +81,7 @@ function goBack() {
           classée monument historique depuis 103 ans.
         </p>
         <p class="certif-footer">
-          © Créer en HTML, design et code par Luidjy Aubel
+          © Créer en HTML, design et code par luidjy Aubel
         </p>
       </div>
     </footer>
