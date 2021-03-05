@@ -6,6 +6,7 @@
   top: 0%;
   left: 0%;
   width: 100%;
+  z-index: 1000;
 }
 
 /* Style of the menu block */
@@ -17,6 +18,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  z-index: 1000;
 }
 
 /* Change the color of different menu block */
@@ -39,7 +41,7 @@
   box-shadow: 0px 15px 10px -5px #777;
   background-color: #ededed;
   background-size: contain;
-  animation: fondu 15s ease-in-out infinite both;
+  animation: fondu 12s ease-in-out infinite both;
 }
 .diapo {
   max-width: 576px;
@@ -47,16 +49,16 @@
 }
 @keyframes fondu {
   0% {
-    background-image: url(https://zupimages.net/up/21/07/az9r.jpg);
+    background-image: url(https://zupimages.net/up/21/09/2i69.jpg);
   }
   33.33% {
-    background-image: url(https://zupimages.net/up/21/07/jrtv.jpg);
+    background-image: url(https://zupimages.net/up/21/09/nbv3.jpg);
   }
   66.67% {
-    background-image: url(https://zupimages.net/up/21/07/ed0c.jpg);
+    background-image: url(https://zupimages.net/up/21/09/5sn1.jpg);
   }
   100% {
-    background-image: url(https://zupimages.net/up/21/07/az9r.jpg);
+    background-image: url(https://zupimages.net/up/21/09/2i69.jpg);
   }
 }
 .d1:hover {
@@ -86,7 +88,7 @@ h2 {
   text-align: left;
 }
 
-/* for that the title has been sticky on the navbar*/
+/* for that the title has been sticky on the nav bar  */
 #title {
   float: left;
   color: #f2f2f2;
@@ -96,8 +98,8 @@ h2 {
   bottom: 10;
 }
 
-/* for creating a spacing over the navbar*/
-.spacing {
+/* for creating a spacing over the nav bar*/
+.forwait {
   height: 50px;
 }
 /* for the title of "page" (in first page it's Actualité)*/
@@ -108,4 +110,266 @@ h2 {
 h5 {
   font-size: 20px;
   text-decoration: underline;
+}
+.foot-footer {
+  margin-left: 20px;
+}
+.certif-footer {
+  text-align: center;
+  font-size: 12px;
+}
+h1 {
+  margin-left: 20px;
+}
+
+.page-header {
+  text-align: center;
+  color: #efefef;
+  text-shadow: 1px 1px 0 #000;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.tldate {
+  display: block;
+  width: 200px;
+  background: #57bc90;
+  border: 3px solid #015249;
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.35);
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before,
+.timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before,
+.timeline li:after {
+  content: " ";
+  display: table;
+}
+/** timeline panels **/
+
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  background: #57bc90;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-left: -16px;
+  border: 3px solid #015249;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+/** timeline content **/
+
+.tl-heading h4 {
+  margin: 0;
+  color: #015249;
+}
+
+.tl-body p,
+.tl-body ul {
+  margin-bottom: 0;
+}
+
+.tl-body > p + p {
+  margin-top: 5px;
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel.noarrow:before,
+timeline li timeline-panel.noarrow {
+  top: 0;
+  right: 0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.image-box {
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+}
+
+.main-image {
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header {
+    font-size: 1em;
+  }
+
+  ul.timeline:before {
+    left: 40px;
+  }
+
+  .tldate {
+    width: 140px;
+  }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100%- 90px);
+    width: -webkit-calc(100%-90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  .image-box {
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: left;
+    align-items: left;
+    resize: both;
+    overflow: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .main-image {
+    min-width: 200px;
+  }
+  .page-header {
+    text-align: left;
+  }
+}
+div > button {
+  display: block;
+  width: 100%;
+}
+.title-histoire {
+  color: darkblue;
 }
