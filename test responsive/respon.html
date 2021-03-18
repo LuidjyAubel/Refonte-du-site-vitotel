@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <title>Les Amis de Vitotel</title>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Luidjy Aubel, Romain Chartier & Théo Martin" />
+  <meta
+    name="description"
+    content="Ceci est le site de l'association des amis de Vitotel"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name=" robots " content="index, follow" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="azerty.css" />
+
+  <body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+          <a href="contact.html" title="Nous contactez">Contact</a>
+          <a href="repertoire.html" title="Notre répertoire">Répertoire</a>
+          <a href="histoire.html" title="L'Histoire des amis de vitotel">Histoire</a>
+          <a href="information.html" title="Information">Information</a>
+          <a href="photos.html" title="Information">Photos</a>
+          <a href="index.html" title="Accueil" class="active">Accueil</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <div style="padding-left:16px">
+            <h2>Responsive Topnav Example</h2>
+            <p>Resize the browser window to see how it works.</p>
+          </div>
+          
+          <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+      <h1 id="title"><a href="index.html">Les Amis de Vitotel</a></h1>
+    </nav>
+    <main>
+      <br />
+      <center>
+        <div class="forwait"></div>
+        <div class="d1"></div>
+      </center>
+      <section>
+        <br />
+        <div class="main">
+          <h2 align="center" class="littletitle">Actualité !</h2>
+          <hr />
+          <h5>
+            Le Pélerinage de Saint Clair a eu lieu le samedi 14 juillet 2018 :
+            messe à 18 h 30 à Vitotel
+          </h5>
+          <p>
+            Notre Assemblée Générale 2018 a eu lieu le samedi 2 juin 2018 à 11 h
+            00 à l'église de Vitotel.
+          </p>
+          <p>
+            L’ordre du jour a été :
+          </p>
+          <ol>
+            <li><a href="rapportmoral2017.pdf">Rapport moral 2017</a></li>
+            <li>
+              <a href="rapportfinancier2017.pdf">Rapport financier 2017</a>
+            </li>
+            <li>Futurs travaux, animations 2018</li>
+            <li>Questions diverses.</li>
+          </ol>
+          <p>
+            Vous pouvez télécharger le compte-rendu de l'assemblée générale qui
+            a eu lieu le 2 juin 2018 à Vitotel.<br />
+            <a href="compte-rendu-assemblée-générale-2018.pdf"
+              >Compte Rendu de l'Assemblée Générale de 2018</a
+            ><br />
+          </p>
+          <br />
+          <hr />
+          <h5>
+            Journées Européennes du Patrimoine 2018, dimanche 16 septembre 2018
+            de 14 h à 18 h
+          </h5>
+          <p>
+            L'association « Les Amis de Vitotel » est désormais « reconnue comme
+            étant d’intérêt général » et est « habilitée à recevoir des dons
+            ouvrant droit à la réduction d’impôt chez les donateurs ».
+          </p>
+          <p>
+            Ouvrent droit à une réduction d'impôt sur le revenu égale à 66 % de
+            leur montant, les sommes prises dans la limite de 20 % du revenu
+            imposable qui correspondent à des dons et versements. De ce fait,
+            pour tous les dons versés à l’association « Les Amis de Vitotel »
+            qui seront effectués en 2018, nous établirons un « reçu dons aux
+            œuvres » début 2019.<br /><br />
+          </p>
+          <hr />
+        </div>
+      </section>
+    </main>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    <footer>
+      <div class="footer">
+        <p class="foot-footer">
+          L'église Saint Michel de Vitotel est un site protégé, et l'église est
+          classée monument historique depuis 103 ans.
+        </p>
+        <p class="certif-footer">
+          © Crée en HTML, design et code par Luidjy Aubel, Romain Chartier &
+          Théo Martin
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

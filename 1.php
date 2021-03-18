@@ -64,7 +64,7 @@ function goBack() {
 	   file_put_contents($fichier, $tel,FILE_APPEND) ;
 	   file_put_contents($fichier, "\n",FILE_APPEND) ;
 	   file_put_contents($fichier, "Adresse mail : ",FILE_APPEND) ;
-           file_put_contents($fichier, $mail,FILE_APPEND) ;
+     file_put_contents($fichier, $mail,FILE_APPEND) ;
 	   file_put_contents($fichier, "\n",FILE_APPEND) ;
 	   file_put_contents($fichier, "Message : ",FILE_APPEND) ;
 	   file_put_contents($fichier, $message,FILE_APPEND) ;
